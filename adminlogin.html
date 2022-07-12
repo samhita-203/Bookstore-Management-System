@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head lang="en" and dir="ltr">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/adminloginstyle.css" class="rel">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>QuickManageAdminLogin</title>
+
+</head>
+<body>
+    <form class="form-container"  onsubmit = "return validate()" autocomplete="off">
+        <p id="error"></p>
+        <h3>Admin Login</h3>
+        <div class="form-grp">
+            <label for="username">Admin Name</label><br>
+            <input type="text" name="username" placeholder="Username" id="user">
+            <i class="fa fa-times u_times"></i>
+            <i class="fa fa-check u_check"></i>
+        </div>
+
+        <div class="form-grp">
+            <label for="password">Password</label><br>
+            <input type="password" name="password" placeholder="Password" id="pass">
+            <i class="fa fa-times p_times"></i>
+            <i class="fa fa-check p_check"></i>
+        </div>
+
+        <div class="form-grp">
+            <input type="button" onclick="location.href='http://127.0.0.1:5501/admin.html';" name="btn" value="Login" >
+        </div>
+
+    </form>
+    <script type="text/javascript" src="adminlogin.js"></script>
+</body>
+</html>
